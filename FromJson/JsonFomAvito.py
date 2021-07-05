@@ -1,4 +1,4 @@
-#import json
+import json
 
 str_json = """
 {
@@ -33,5 +33,5 @@ str_json = """
 """
 
 print(type(str_json))
-data = str_json
+data = json.loads(str_json)
 print(data)
