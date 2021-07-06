@@ -71,3 +71,13 @@ with open("avito_city2.json") as file:
 for item in data['data']:
         print(f"Сохраненный {item['id']} = {item['name']}")
 
+
+with open("avito_category.json", encoding='utf-8') as file:
+        data = json.load(file)
+with open("avito_category.json2.json", 'w') as file2:
+        json.dump(data, file2, indent=3)
+
+with open("avito_region.json", encoding='utf-8') as file:
+        data = json.load(file)
+with open("avito_region.json2.json", 'w') as file2:
+        json.dump(data, file2, indent=3)
