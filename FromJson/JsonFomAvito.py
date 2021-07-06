@@ -34,6 +34,7 @@ str_json = """
 
 print(type(str_json))
 
+
 data = json.loads(str_json)
 print(f"{data['status']} & {data['data']}")
 #print(f"! = {data['status']} & {data['data']}")
